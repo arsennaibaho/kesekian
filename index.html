@@ -19,57 +19,6 @@
         .font-romance {
             font-family: 'Dancing Script', cursive;
         }
-        
-        /* Snowfall Animation */
-        @keyframes snowfall {
-            0% { transform: translateY(-10vh) translateX(0); opacity: 0; }
-            10% { opacity: 1; }
-            100% { transform: translateY(100vh) translateX(20px); opacity: 0.3; }
-        }
-
-        .snowflake {
-            position: fixed;
-            top: -10px;
-            background: white;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 10;
-            animation: snowfall linear infinite;
-        }
-
-        /* Floating Heart Animation */
-        @keyframes floatHeart {
-            0% { transform: translateY(0) scale(1); opacity: 0; }
-            50% { opacity: 0.8; }
-            100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
-        }
-
-        .floating-heart {
-            position: absolute;
-            color: #ff4d4d;
-            font-size: 24px;
-            animation: floatHeart 3s ease-out infinite;
-            pointer-events: none;
-        }
-
-        /* Initial Fade In */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-fade-in {
-            animation: fadeIn 1.5s ease-out forwards;
-        }
-
-        /* Pulse for Icons */
-        @keyframes softPulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-        .animate-pulse-soft {
-            animation: softPulse 3s ease-in-out infinite;
-        }
     </style>
 <script type="importmap">
 {
